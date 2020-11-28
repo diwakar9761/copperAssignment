@@ -1,0 +1,236 @@
+.banner > img {
+    width: 100%;
+}
+.banner-content h1 {
+    font-size: 30px;
+    color: #001B2D;
+    font-weight: 400;
+    max-width: 500px;
+    position: relative;
+    padding: 10px;
+    margin: 20px auto;
+    font-family: 'Roboto Slab', serif;
+}
+.banner-content h1:after {
+    content: "";
+    border-bottom: 1px solid #001B2D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.banner-content p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #001B2D;
+    margin-bottom: 0;
+}
+.scroller {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* login form section */
+.loginFormSection {
+    background: #001B2D;
+}
+.loginFormSection > .container-fluid > .row > .col:nth-child(2) {
+    border-left: 3.5px solid #C0C0C0;
+}
+.request-info h3 {
+    position: relative;
+    display: block;
+}
+.request-info h3 span {
+    display: block;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    line-height: 28px;
+    background-color: #C0C0C0;
+    position: relative;
+    display: inline-block;
+    margin: 58px auto 80px;
+    padding: 5px 45px;
+    z-index: 10;
+}
+.request-info h3 span:after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    border: 19px solid transparent;
+    border-left-color: #C0C0C0;
+    top: 0;
+}
+.request-info h3 span::before{
+    content: '';
+    position: absolute;
+    right: 100%;
+    border: 19px solid transparent;
+    border-right-color: #C0C0C0;
+    top: 0;
+}
+.request-info h3::before{
+    position: absolute;
+    top: 50%;
+    background: #c0c0c0;
+    height: 1px;
+    z-index: 1;
+    left: 0%;
+    width: 100%;
+    content: '';
+    transform: translateY(-12px);
+}
+.links .col-sm-12 {
+    display: flex;
+    align-items: center;
+}
+.links .col-sm-12 p {
+    font-weight: 700;
+    color: #C0C0C0;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+.reqt-info {
+    margin-top: 70px;
+}
+.reqt-info a {
+    background: #FFFFFF;
+    border-radius: 25px 25px 0px 0px;
+    display: inline-block;
+    width: 313px;
+    padding: 8px;
+    color: #01416E;
+}
+
+/* login form css */
+.login-form {
+    padding: 20px;
+}
+.login-form h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 10px;
+}
+.login-form form input {
+    display: block;
+    margin: 15px auto;
+    width: 349px;
+}
+.login-form form input:focus {
+    outline: none;
+}
+.login-form form input::placeholder {
+    color: #9B9B9B;
+    font-size: 12px;
+}
+.login-form .buttons {
+    max-width: 350px;
+    margin: auto;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.login-form .buttons a {
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+}
+.login-form .buttons button {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+
+/* industry links styles */
+.industry-link-section {
+    padding: 70px 0;
+}
+.industry-link-section h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #001B2D;
+    display: inline-block;
+    margin: 0 auto 20px;
+    font-family: 'Roboto Slab', serif;
+    padding: 0 15px 5px;
+    position: relative;
+}
+.industry-link-section h2:after {
+    content: "";
+    border-bottom: 1px solid #001B2D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.industry-link-section .col-sm-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-sm-12 .single-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 120px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* news highlight section */
+.news-highlight-section {
+    background-color: #001B2D;
+}
+.news-highlight-section .col-md-8 {
+    border-right: 3.5px solid #C0C0C0;
+}
+.professional-insight {
+    padding: 30px;
+    text-align: center;
+}
+.professional-insight h3 {
+    font-size: 26px;
+    line-height: 28px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.professional-insight ul {
+    text-align: left;
+    padding: 0;
+    list-style: none;
+}
+.professional-insight ul li {
+    margin-bottom: 32px;
+}
+.professional-insight ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+    .request-info h3 span{
+        margin: 20px auto 20px;
+    }
+    .request-info h3::before{
+        transform: translateY(0px);
+    }
+    .links .col-sm-12 {
+        margin-bottom: 10px;
+    }
+    .reqt-info{
+        margin-top: 20px;
+    }
+    .loginFormSection > .container-fluid > .row > .col:nth-child(2) {
+        border-left: 0px;
+    }
+}

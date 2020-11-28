@@ -1,0 +1,14 @@
+section {
+    height: 100vh;
+    background-image: url('../../assets/images/success.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success{
+    max-width: 550px;
+}
+.success h3 {
+    color: #fff;
+}

@@ -1,0 +1,106 @@
+footer{
+    background-color: #fff;
+    padding: 5px 0;
+}
+.left-footer{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.left-footer h3 {
+    display: inline-block;
+    padding-right: 60px;
+    margin-bottom: 0;
+}
+.left-footer a:hover {
+    text-decoration: none;
+}
+.left-footer h3 a {
+    font-size: 16px;
+    line-height: 20px;
+    color : #01416E;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+}
+.left-footer ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.left-footer li {
+    display: inline-block;
+}
+.left-footer ul li a{
+    color: #4C4D4F;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 15px;
+}
+.left-footer ul li.active a{
+    color : #01416E;
+    font-weight: bold;
+}
+.right-footer{
+    display: flex;
+    align-items: flex-end;
+    height: 48px;
+    justify-content: flex-end;
+}
+.right-footer ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.right-footer li {
+    display: inline-block;
+}
+.right-footer ul li a{
+    color: #4C4D4F;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0 5px;
+    border-left:1px solid #4C4D4F;
+}
+.right-footer ul li:first-child a{
+    border-left: 0px;
+}
+.right-footer .social {
+    display: inline-block;
+    margin-left: 40px;
+}
+.right-footer .social img {
+    margin-left: 12px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .left-footer,
+    .right-footer {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    .left-footer ul li a {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 15px 0 0px;
+    }
+    .right-footer ul li a {
+        font-size: 9px;
+        padding: 0 5px 0 5px;
+    }
+    .right-footer ul li:first-child a{
+        padding-left: 0;
+    }
+    .right-footer .social {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .right-footer .social a:first-child img {
+        margin-left: 0;
+    }
+}

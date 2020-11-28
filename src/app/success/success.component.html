@@ -1,0 +1,10 @@
+<section>
+     <div class="success" *ngIf="login; else logoutData">
+         <h3> Login Successfully with (username : {{user.username}}) and (password : {{user.password}}) </h3>
+         <button type="button" class="btn btn-danger" (click)="logout()"> Logout </button>
+     </div>
+     <ng-template #logoutData>
+         <h3 class="d-block"> Login to view content of this page! </h3>
+        <button type="button" class="btn btn-danger d-block" (click)="gotologin()" > Login now! </button>
+     </ng-template>
+</section>
